@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo span {
+    color: #8739fa;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.menu:hover li {
+    opacity: 0.4;
+}
+
+.menu li:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.profile {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 80%;
+    height: 100%;
+    border-radius: 50px;
+    border-color: #151418;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    transition: 0.2s all ease-in-out;
+}
+
+.profile-img {
+    scale: 50%;
+}
+
+.profile-desc {
+    padding: 20px;
+}
+
+.profile-desc hr {
+    margin: 10px 0;
+}
+
+.profile-desc h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.profile:hover .profile-card {
+    transform: scale(1.05);
+}
+
+.projects-heading {
+    text-align: center;
+    font-size: 46px;
+    padding: 100px 0;
+}
+
+.projects-all {
+    display: flex;
+    padding: 0px 10% ;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 100px;
+}
+
+.project-card {
+    
+    flex: 30%;
+    padding: 25px 40px;
+    background-color: #8739fa54;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    background-color: black;
+    color: #8739fa;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 46px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-heading {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    background-color: #8739fa;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .profile {
+        padding: 50px;
+    }
+
+    .profile-card {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-desc {
+        padding: 10px;
+    }
+
+    .projects-heading {
+        font-size: 36px;
+        padding: 50px 0;
+    }
+
+    .project-card {
+        flex: 100%;
+    }
+
+    .contact-heading {
+        font-size: 36px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
